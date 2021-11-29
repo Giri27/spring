@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean class="com.xworkz.cctv.CCTV" id="x">
+		<constructor-arg name="brand" value="MI"></constructor-arg>
+		<constructor-arg name="cameraSize" value="122"></constructor-arg>
+		<constructor-arg name="price" value="6000"></constructor-arg>
+		<constructor-arg name="color" value="Cream"></constructor-arg>
+	</bean>  
+	
+	<bean class="java.lang.String" id="str">
+		<constructor-arg value="HoneyWell"></constructor-arg>
+	</bean>
+	
+	<bean class="java.lang.Byte" id="b">
+		<constructor-arg value="9"></constructor-arg>
+	</bean>
+	
+	<bean class="java.lang.Short" id="s">
+		<constructor-arg value="27"></constructor-arg>
+	</bean>
+	
+	<bean class="java.lang.Integer" id="i">
+		<constructor-arg value="200"></constructor-arg>
+	</bean>
+	
+	<bean class="java.lang.Long" id="l">
+		<constructor-arg value="98765432"></constructor-arg>
+	</bean>
+	
+	<bean class="java.lang.Double" id="d">
+		<constructor-arg value="500.00"></constructor-arg>
+	</bean>
+	
+	<bean class="java.lang.Float" id="f">
+		<constructor-arg value="8765.98"></constructor-arg>
+	</bean>
+	
+	<bean class="java.lang.Character" id="c">
+		<constructor-arg value="g"></constructor-arg>
+	</bean>
+	
+	<bean class="java.lang.Boolean" id="bl">
+		<constructor-arg value="true"></constructor-arg>
+	</bean>
+
+</beans>
