@@ -11,14 +11,13 @@ public class Tester {
 		ApplicationContext springContainer = new ClassPathXmlApplicationContext(springConfigFile);
 		System.out.println("springConatiner is created "+springContainer.hashCode());
 		
-		
 		CCTV cctv = springContainer.getBean(CCTV.class);
 		System.out.println(cctv);
 		System.out.println(cctv.getBrand());
 		System.out.println(cctv.getCameraSize());
 		System.out.println(cctv.getPrice());
 		System.out.println(cctv.getColor());
-		
+				
 		cctv.record();
 		cctv.autoDelete();
 		
@@ -48,7 +47,5 @@ public class Tester {
 		
 		Boolean bool = springContainer.getBean(Boolean.class);
 		System.out.println(bool.hashCode());
-		
 	}
-
 }

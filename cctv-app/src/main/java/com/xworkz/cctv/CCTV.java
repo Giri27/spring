@@ -17,12 +17,18 @@ public class CCTV {
 		System.out.println(this.getClass().getSimpleName() +" object created");
 	}
 	public CCTV(String brand, int cameraSize, double price, String color) {
-		super();
+		System.out.println("Invoked constructor with four arguments");
 		this.brand = brand;
 		this.cameraSize = cameraSize;
 		this.price = price;
 		this.color = color;
 	}
+	
+	/*public CCTV(String brand, double price) {
+		super();
+		this.brand = brand;
+		this.price = price;
+	}*/
 	public String getBrand() {
 		return brand;
 	}

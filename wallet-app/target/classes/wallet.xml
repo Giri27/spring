@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+           
+<bean class="com.xworkz.wallet.Wallet" id="walletId">
+	<constructor-arg name="color" value="Brown"></constructor-arg>
+	<constructor-arg value="Lee"></constructor-arg>
+	<constructor-arg value="1000.0"></constructor-arg>
+	<constructor-arg name="material" ref="materialId"></constructor-arg>
+	<constructor-arg name="money" ref="moneyId"></constructor-arg>
+	<constructor-arg name="atmCard" ref="atmId"></constructor-arg>
+	<constructor-arg name="photo" ref="photoId"></constructor-arg>
+</bean>           
+           
+<bean class="com.xworkz.wallet.Material" id="materialId"></bean>
+<bean class="com.xworkz.wallet.Money" id="moneyId"></bean>
+<bean class="com.xworkz.wallet.ATMCard" id="atmId"></bean>
+<bean class="com.xworkz.wallet.Photo" id="photoId"></bean>
+</beans>
+           
+           

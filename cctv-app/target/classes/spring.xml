@@ -9,7 +9,12 @@
 		<constructor-arg name="cameraSize" value="122"></constructor-arg>
 		<constructor-arg name="price" value="6000"></constructor-arg>
 		<constructor-arg name="color" value="Cream"></constructor-arg>
-	</bean>  
+	
+		<property name="brand" value="HiPlus"></property>
+		<property name="cameraSize" value="250"></property>
+		<property name="price" value="8000"></property>
+		<property name="color" value="black"></property>
+	</bean> 
 	
 	<bean class="java.lang.String" id="str">
 		<constructor-arg value="HoneyWell"></constructor-arg>
