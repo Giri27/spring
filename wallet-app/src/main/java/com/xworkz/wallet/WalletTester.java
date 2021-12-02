@@ -19,6 +19,9 @@ public class WalletTester {
 		
 		Photo photo = springContainer.getBean(Photo.class);
 		System.out.println(photo);
+		
+		Connection con = springContainer.getBean(Connection.class);
+		System.out.println(con);
 	}
 
 }

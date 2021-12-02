@@ -26,6 +26,11 @@
 	<property name="locations" value="photo.properties"></property>
 </bean>
 
+<bean class="com.xworkz.wallet.Connection">
+	<property name="url" value="${url}"></property>
+	<property name="userName" value="${un}"></property>
+	<property name="password" value="${pwd}"></property>
+</bean>
 </beans>
            
            
