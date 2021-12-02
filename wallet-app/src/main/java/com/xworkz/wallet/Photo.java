@@ -10,4 +10,33 @@ public class Photo {
 		System.out.println(this.getClass().getSimpleName() +" Bean Created");
 	}
 
+	public String getPhotoType() {
+		return photoType;
+	}
+
+	public void setPhotoType(String photoType) {
+		this.photoType = photoType;
+	}
+
+	public String getPhotoSize() {
+		return photoSize;
+	}
+
+	public void setPhotoSize(String photoSize) {
+		this.photoSize = photoSize;
+	}
+
+	public String getPhotoPrice() {
+		return photoPrice;
+	}
+
+	public void setPhotoPrice(String photoPrice) {
+		this.photoPrice = photoPrice;
+	}
+
+	@Override
+	public String toString() {
+		return "Photo [photoType=" + photoType + ", photoSize=" + photoSize + ", photoPrice=" + photoPrice + "]";
+	}
+	
 }

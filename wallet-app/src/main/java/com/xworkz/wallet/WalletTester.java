@@ -16,6 +16,9 @@ public class WalletTester {
 		System.out.println("Wallet object "+walletObject);
 		Wallet w = (Wallet) walletObject;
 		System.out.println("wallet object "+w);
+		
+		Photo photo = springContainer.getBean(Photo.class);
+		System.out.println(photo);
 	}
 
 }

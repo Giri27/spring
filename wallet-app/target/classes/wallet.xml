@@ -17,7 +17,15 @@
 <bean class="com.xworkz.wallet.Material" id="materialId"></bean>
 <bean class="com.xworkz.wallet.Money" id="moneyId"></bean>
 <bean class="com.xworkz.wallet.ATMCard" id="atmId"></bean>
-<bean class="com.xworkz.wallet.Photo" id="photoId"></bean>
+<bean class="com.xworkz.wallet.Photo" id="photoId">
+	<property name="photoType" value="${type}"></property>
+	<property name="photoSize" value="${size}"></property>
+	<property name="photoPrice" value="${price}"></property>
+</bean>
+<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	<property name="locations" value="photo.properties"></property>
+</bean>
+
 </beans>
            
            
