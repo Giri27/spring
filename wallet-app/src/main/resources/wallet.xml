@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
            
-<bean class="com.xworkz.wallet.Wallet" id="walletId">
+<!-- <bean class="com.xworkz.wallet.Wallet" id="walletId">
 	<constructor-arg name="color" value="Brown"></constructor-arg>
 	<constructor-arg value="Lee"></constructor-arg>
 	<constructor-arg value="1000.0"></constructor-arg>
@@ -30,7 +30,9 @@
 	<property name="url" value="${url}"></property>
 	<property name="userName" value="${un}"></property>
 	<property name="password" value="${pwd}"></property>
-</bean>
+</bean> -->
+
+
 </beans>
            
            
