@@ -16,6 +16,9 @@ public class FruitTester {
 		
 		SummerSeasonFruit ssf = springContainer.getBean(SummerSeasonFruit.class);
 		System.out.println(ssf);
+		
+		Connection connection = springContainer.getBean(Connection.class);
+		System.out.println(connection);
 	}
 
 }

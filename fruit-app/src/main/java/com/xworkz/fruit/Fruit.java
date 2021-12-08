@@ -8,35 +8,38 @@ import org.springframework.stereotype.Component;
 public class Fruit {
 	
 	//@Value("Orange")
+	@Value("${fn}")
 	private String name;
 	//@Value("All")
 	private String season;
 	//@Value("60.0")
 	private double pricePerKg;
-	//@Value("Oragnge")
+	//@Value("Orange")
 	private String color;
 	private SummerSeasonFruit summerSeasonFruit;
 
-	/*
-	 * public Fruit() { System.out.println("Default "+
-	 * this.getClass().getSimpleName() +" bean created"); }
-	 */
+	public Fruit() { 
+		System.out.println("Default "+ this.getClass().getSimpleName() +" bean created"); 
+	}
+	 
+	
+	public Fruit(@Value("Grapes") String name, @Value("All") String season, @Value("100.00") double pricePerKg, @Value("Green") String color) {//constructor initialization 
+		System.out.println("Parameterized "+ this.getClass().getSimpleName() +" bean created"); 
+	  this.name = name;
+	  this.season = season; 
+	  this.pricePerKg = pricePerKg; 
+	  this.color = color; 
+	}
+	 
+	
 	/*
 	 * public Fruit(@Value("Grapes") String name, @Value("All") String
-	 * season, @Value("100.00") double pricePerKg, @Value("Green") String color) {
-	 * //constructor initialization System.out.println("Parameterized "+
+	 * season, @Value("100.00") double pricePerKg, @Value("Green") String color,
+	 * SummerSeasonFruit summerSeasonFruit) { System.out.println("Parameterized "+
 	 * this.getClass().getSimpleName() +" bean created"); this.name = name;
-	 * this.season = season; this.pricePerKg = pricePerKg; this.color = color; }
+	 * this.season = season; this.pricePerKg = pricePerKg; this.color = color;
+	 * this.summerSeasonFruit = summerSeasonFruit; }
 	 */
-	
-	public Fruit(@Value("Grapes") String name, @Value("All") String season, @Value("100.00") double pricePerKg, @Value("Green") String color, @Autowired SummerSeasonFruit summerSeasonFruit) {
-		System.out.println("Parameterized "+ this.getClass().getSimpleName() +" bean created");
-		this.name = name;
-		this.season = season;
-		this.pricePerKg = pricePerKg;
-		this.color = color;
-		this.summerSeasonFruit = summerSeasonFruit;
-	}
 
 	public String getName() {
 		return name;
@@ -81,7 +84,7 @@ public class Fruit {
 
 	@Override
 	public String toString() {
-		return "Fruit [name=" + name + ", season=" + season + ", pricePerKg=" + pricePerKg + ", color=" + color + "]";
+		return "Fruit [name=" + name + ", season=" + season + ", pricePerKg=" + pricePerKg + ", color=" + color
+				+ ", summerSeasonFruit=" + summerSeasonFruit + "]";
 	}
-	
 }
