@@ -1,0 +1,14 @@
+package com.xworkz.newspaperApp.service;
+
+import com.xworkz.newspaperApp.dto.NewspaperDTO;
+
+public interface NewspaperService {
+	
+	boolean validateNewspaperDTO(NewspaperDTO newspaperDTO);
+	
+	boolean saveNewspaperDTO(NewspaperDTO newspaperDTO);
+	
+	boolean validateNewspaperName(String newspaperName);
+
+	NewspaperDTO getNewspaperDTO(String newspaperName);
+}
