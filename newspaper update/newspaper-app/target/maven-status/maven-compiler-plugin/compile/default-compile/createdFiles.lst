@@ -1,0 +1,7 @@
+com\xworkz\newspaperApp\controller\NewspaperController.class
+com\xworkz\newspaperApp\dto\NewspaperDTO.class
+com\xworkz\newspaperApp\entity\NewspaperEntity.class
+com\xworkz\newspaperApp\dao\NewspaperDAOImpl.class
+com\xworkz\newspaperApp\service\NewspaperService.class
+com\xworkz\newspaperApp\service\NewspaperServiceImpl.class
+com\xworkz\newspaperApp\dao\NewspaperDAO.class
